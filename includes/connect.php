@@ -4,7 +4,7 @@
     $conn = @mysql_connect(mysql_host, mysql_user, mysql_pass);
 
 	if (!$conn)
-			die(conn_error);
+			die(mysql_error());
     else
     {
         if(!@mysql_select_db(mysql_db))
