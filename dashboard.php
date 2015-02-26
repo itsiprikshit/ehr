@@ -12,7 +12,7 @@
                 //PATIENT DASHBOARD
                 
                 if(isset($_SESSION['patient_id'])){
-                    echo '<br /><br /><center><span style="color:#254830;font-size:20px;font-family:\'junction regular\'; ">This is your dashboard. <br /><br /> View your medical history here. </span></center>';
+                    echo '<br /><center><span style="color:#254830;font-size:20px;font-family:\'junction regular\'; ">This is your dashboard. <br /><br /> View your medical history here. </span></center>';
                     echo '<img src="images/image_1.jpg" style="margin-left:385px;margin-top:8px" height="70" width="300"></img>';
                     
                     $query = "SELECT * FROM `patient` WHERE `id`='".mysql_real_escape_string($_SESSION['patient_id'])."'";
@@ -49,6 +49,9 @@
                                                     Medicine: '.$medicine_3.' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dose: '.$dose_3.'<br />
                                                     Medicine: '.$medicine_4.' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dose: '.$dose_4.'<br />
                                                     Medicine: '.$medicine_5.' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dose: '.$dose_5.'<br /> <br />
+                                                    
+                                                    <center><a href="#"><span style="color:#000;font-size:20px;font-family:\'junction regular\';text-decoration:underline; "> PRINT REPORT </span></a></center>
+                                                    
                                                     <span style="color:red">Next appointment: '.$next_appointment.'</span><br />
                                                     Doctor name: '.$doctor_name.'<br />'.
                                                     
@@ -81,6 +84,11 @@
                                             '</center>';
                             }
                         }
+                        echo '<br/><center><form action="upload_file.php" method="post" enctype="multipart/form-data">
+                                <label for="file">Upload Report:</label>
+                                <input type="file" name="file[]" id="file" multiple="multiple">
+                                <input type="submit" name="submit" value="Submit">
+                              </form><center>';
                     
                 }
                 
@@ -174,6 +182,7 @@
                                                                     <th>LAST VISITED</th>
                                                                     <th>NEXT APPOINTMENT</th>
                                                                     <th>VIEW PROFILE</th>
+                                                                    <th>PRINT</th>
                                                                 </tr>';
                                                                 
                                 while($user_row = mysql_fetch_assoc($query_run))
@@ -184,6 +193,7 @@
                                                 <td>'.$user_row['last_visited'].'</td>
                                                 <td>'.$user_row['next_appointment'].'</td>
                                                 <td><a href="#">View Profile</a></td>
+                                                <td><a href="#">Print Report</a></td>
                                             </tr>';
                                             
                                 }

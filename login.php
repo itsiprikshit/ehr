@@ -40,7 +40,8 @@
         <div class="align_mid" style="background:#d1cddc;">
             <div style="position:absolute;color:#333;left:100px;top:20px">
                 <h1 style="font-family: 'junction regular';float:left">Login form</h1>
-                <h1 style="font-family: 'junction regular';float:left;margin-left:360px">Select:</h1>
+                <h1 style="font-family: 'junction regular';float:left;margin-left:150px;font-size:22px;text-transform:uppercase"><a href="register.php">Click to Register</a></h1>
+                <h1 style="font-family: 'junction regular';float:left;margin-left:80px">Select:</h1>
                 
                 <ul id="tabs">
 			        <li><a href="javascript:tabSwitch('tab1', 'content_1');" class="active" id="tab1">Patient</a></li>

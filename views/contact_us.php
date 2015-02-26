@@ -16,8 +16,8 @@
                 CONTACT US
             </div>
             <div style="position:absolute;color:#fff;left:800px;top:50px">
-                Our E-mail<span style="margin-left:4px"></span>: textbundle@gmail.com <br/>
-                Mobile<span style="margin-left:26px"></span>: +91-00000-00000
+                Our E-mail<span style="margin-left:4px"></span>: textwrap@gmail.com <br/>
+                Mobile<span style="margin-left:26px"></span>: +91-88949-95280
             </div>
             <form action="" method="post" style="clear:both">
                 Name<span style="margin-left:33px">:<input class="c-us" type="text" name="doctor_id" maxlength="100" /><br/><br />

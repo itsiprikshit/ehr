@@ -9,7 +9,7 @@
             <p style="width:250px;margin-left:250px;margin-top:200px;position:absolute;font-size:20px">Our focus is to provide a customized and viable text mining technique for your data.</p>
             
             <p style="width:280px;margin-left:250px;margin-top:380px;position:absolute;font-size:20px;text-transform:uppercase;color:#ff6600">So, hurry up !!! <br/><br/>
-                You are just an e-mail away.</p>
+                You are just an e-mail away.<br/><br/><a href="#contact-us" style="text-decoration:underline;color:#000">< CONTACT US ></a></p>
             
             <!-- <img src="images/about-5.png" style="margin-left:160px;margin-top:400px;position:absolute"/>
             

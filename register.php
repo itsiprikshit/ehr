@@ -40,7 +40,8 @@
         <div class="align_mid" style="background:#d1cddc;">
             <div style="position:absolute;color:#333;left:100px;top:20px">
                 <h1 style="font-family: 'junction regular';float:left">Registration form</h1>
-                <h1 style="font-family: 'junction regular';float:left;margin-left:240px">Select:</h1>
+                <h1 style="font-family: 'junction regular';float:left;margin-left:70px;font-size:22px;text-transform:uppercase"><a href="login.php">Click to Login</a></h1>
+                <h1 style="font-family: 'junction regular';float:left;margin-left:80px">Select:</h1>
                 
                 <ul id="tabs">
 			        <li><a href="javascript:tabSwitch('tab1', 'content_1');" class="active" id="tab1">Patient</a></li>
@@ -87,7 +88,7 @@
                                                             $id = mysql_num_rows(mysql_query($query));
                                                             
                                                             echo '<script>alert("Registration successfull")</script>';
-                                                            echo '<script>alert("Your login id : '.$id.'\nYour password : '.$password.'")</script>';
+                                                            echo '<script>alert("Your login id : '.(39+$id-1).'\nYour password : '.$password.'")</script>';
                                                             //echo '<h3 style="clear:both;font-weight:400"><center>Registration successfull.</center></h3>';
                                                             //echo '<p style="clear:both;"><center>Your login id : '.$id.'</p></center>';
                                                             //echo '<p style="clear:both;"><center>Your password : '.$password.'</center></p>';
@@ -130,7 +131,7 @@
                                                                 $id = mysql_num_rows(mysql_query($query));
                                                             
                                                                 echo '<script>alert("Registration successfull")</script>';
-                                                                echo '<script>alert("Your login id : '.$id.'")</script>';
+                                                                echo '<script>alert("Your login id : '.(2+$id).'")</script>';
                                                                 //echo '<h3 style="clear:both;font-weight:400"><center>Registration successfull.</center></h3>';
                                                             }
                                                             else

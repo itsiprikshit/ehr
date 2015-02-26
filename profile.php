@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Invite us</title>
+	<title>Profile</title>
 </head>
 
 <?php
@@ -32,6 +32,8 @@
                     if(isset($_SESSION['patient_id'])){
                         
                         echo '<br /><br /><center><span style="color:#254830;font-size:20px;font-family:\'junction regular\'; "> YOUR PROFILE </span></center>';
+                    echo '<center><img src="images/login.png" style="margin-top:4px" height="100px" width="100px"/>';
+                        
                         $query = "SELECT * FROM `patient` WHERE `id`='".mysql_real_escape_string($_SESSION['patient_id'])."'";
                         if($query_run = mysql_query($query))
                         {
@@ -52,7 +54,15 @@
                                                     Mobile: '.$mobile.'<br />
                                                     Adhar: '.$adhar.'<br />
                                                 
-                                            </center>';
+                                            </center><br/>';
+                                echo '<center>
+                                        <img src="images/profile-1.png" style=";height:80px;width:80px"/>
+                                        <img src="images/profile-2.png" style="margin-left:150px;height:80px;width:80px"/>
+                                        <img src="images/profile-3.png" style="margin-left:150px;height:80px;width:50px"/><br/><br/>
+                                        <span style="color:#254830;font-size:15px;font-family:\'junction regular\';margin-left:40px "> Edit Profile
+                                        <span style="color:#254830;font-size:15px;font-family:\'junction regular\';margin-left:110px "> Change Password 
+                                        <span style="color:#254830;font-size:15px;font-family:\'junction regular\';margin-left:100px "> Change number
+                                      </center>';
                             }
                         }
                     }
@@ -62,6 +72,7 @@
                     elseif(isset($_SESSION['doctor_id'])){
                         
                         echo '<br /><br /><center><span style="color:#254830;font-size:20px;font-family:\'junction regular\'; "> WELCOME DOCTOR </span></center>';
+                        echo '<center><img src="images/login.png" style="margin-top:4px" height="100px" width="100px"/>';
                         
                         $query = "SELECT * FROM `doctor` WHERE `id`='".mysql_real_escape_string($_SESSION['doctor_id'])."'";
                         if($query_run = mysql_query($query))
@@ -79,9 +90,17 @@
                                 echo '<br /><center>ID: '.$id.'<br />
                                                     Name: '.$doctor_name.'<br />
                                                     Date of birth: '.$dob.'<br />
-                                                    Joinind date: '.$joining_date.'<br />
+                                                    Joinind date: '.$joining_date.'
                                                 
                                             </center>';
+                                echo '<br /><center>
+                                        <img src="images/profile-1.png" style=";height:80px;width:80px"/>
+                                        <img src="images/profile-2.png" style="margin-left:150px;height:80px;width:80px"/>
+                                        <img src="images/profile-3.png" style="margin-left:150px;height:80px;width:50px"/><br/><br/>
+                                        <span style="color:#254830;font-size:15px;font-family:\'junction regular\';margin-left:40px "> Edit Profile
+                                        <span style="color:#254830;font-size:15px;font-family:\'junction regular\';margin-left:110px "> Change Password 
+                                        <span style="color:#254830;font-size:15px;font-family:\'junction regular\';margin-left:100px "> Change number
+                                      </center>';            
                             }
                         }
                     }
@@ -106,6 +125,14 @@
                                             </center>';
                             }
                         }
+                        echo '<br /><center>
+                                        <img src="images/profile-1.png" style=";height:80px;width:80px"/>
+                                        <img src="images/profile-2.png" style="margin-left:150px;height:80px;width:80px"/>
+                                        <img src="images/profile-3.png" style="margin-left:150px;height:80px;width:50px"/><br/><br/>
+                                        <span style="color:#254830;font-size:15px;font-family:\'junction regular\';margin-left:40px "> Edit Profile
+                                        <span style="color:#254830;font-size:15px;font-family:\'junction regular\';margin-left:110px "> Change Password 
+                                        <span style="color:#254830;font-size:15px;font-family:\'junction regular\';margin-left:100px "> Change number
+                                      </center>';
                     }
                 }
                 else{
