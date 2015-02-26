@@ -78,7 +78,7 @@
                                                     else
                                                     {
                                                             $query = "INSERT INTO `patient`";
-                                                            $query .= "VALUES('','{$patient_name}','{$password}','{$dob}','','','','','','','{$current_date}','','{$mob}','{$correspondance_add}','{$permanent_add}','{$adhar}','','','','','','')";
+                                                            $query .= "VALUES('','{$patient_name}','{$password}','{$dob}','','','','','','','{$current_date}','','{$mob}','{$correspondance_add}','{$permanent_add}','{$adhar}','','','','','','','')";
                                             
                                                             mysql_query($query);
                                                             
