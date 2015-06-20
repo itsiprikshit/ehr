@@ -88,7 +88,7 @@
                                                             $id = mysql_num_rows(mysql_query($query));
                                                             
                                                             echo '<script>alert("Registration successfull")</script>';
-                                                            echo '<script>alert("Your login id : '.(39+$id-1).'\nYour password : '.$password.'")</script>';
+                                                            echo '<script>alert("Your login id : '.(44+$id-1).'\nYour password : '.$password.'")</script>';
                                                             //echo '<h3 style="clear:both;font-weight:400"><center>Registration successfull.</center></h3>';
                                                             //echo '<p style="clear:both;"><center>Your login id : '.$id.'</p></center>';
                                                             //echo '<p style="clear:both;"><center>Your password : '.$password.'</center></p>';
