@@ -5,6 +5,6 @@
             <img src="images/home_1.png" style="margin-left:270px;margin-top:0px;position:absolute"/>
             <img src="images/home_2.png" style="width:300px; height:250px;margin-left:760px;margin-top:15px;position:absolute"/>
             <h2 style="margin-left:300px;margin-top:308px;color:#fff;font-size:30px">Transform text into information</h2>
-            <button class="btn" onclick='location.href="invite_us.php"'> Invite us </button>
+            <!-- <button class="btn" onclick='location.href="invite_us.php"'> Invite us </button> -->
     </div>
 </div>

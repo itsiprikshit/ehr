@@ -6,7 +6,7 @@
                               text-transform:uppercase;
                               color:#ff6600;
                               font-weight:800;
-                              font-size:30px;">Text Wrap</p>
+                              font-size:30px;">Text Park</p>
                               
             <?php   if(!loggedin()){
                         echo '<div class="link-wrap">';

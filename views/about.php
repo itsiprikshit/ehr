@@ -2,7 +2,7 @@
     <div class="align_mid">
             <img src="images/about-1.png" style="margin-left:50px;margin-top:30px;position:absolute"/>
             
-            <p style="margin-left:250px;margin-top:70px;position:absolute;font-size:20px">Textwrap provides solutions for text mining in various domains like social media analytics, biomedical analytics, emotion recognition, question answering system etc.</p>
+            <p style="margin-left:250px;margin-top:70px;position:absolute;font-size:20px">Text Park provides solutions for text mining in various domains like social media analytics, biomedical analytics, emotion recognition, question answering system etc.</p>
             
             <img src="images/about-3.png" style="height:350px;width:360px;margin-left:560px;margin-top:140px;position:absolute;"/>
             
